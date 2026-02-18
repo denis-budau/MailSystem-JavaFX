@@ -1,0 +1,6 @@
+com\unito\server\DataModel\ServerModel.class
+com\unito\server\ServerHandler.class
+com\unito\server\Message.class
+com\unito\server\ServerApplication.class
+com\unito\server\MailHandler.class
+com\unito\server\Controller\ServerController.class

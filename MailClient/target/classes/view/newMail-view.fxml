@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<AnchorPane prefWidth="640" prefHeight="400"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.unito.client.Controller.NewMailController">
+
+    <Label layoutX="50.0" layoutY="20.0" text="New message" style="-fx-font-size: 22px;" />
+
+    <Label layoutX="50.0" layoutY="70.0" text="From" />
+    <Label fx:id="from" layoutX="90.0" layoutY="65.0" prefHeight="26.0" prefWidth="220.0" />
+    <Label fx:id="negativeResponseTo" layoutX="355.0" layoutY="50" text="" style="-fx-text-fill: red; -fx-font-size: 8px;" visible="false"/>
+    <Label layoutX="310.0" layoutY="70.0" text="To" />
+    <TextField fx:id="to" layoutX="350.0" layoutY="65.0" prefHeight="26.0" prefWidth="220.0" visible="true" />
+    <Label fx:id="toReply" layoutX="340.0" layoutY="70.0" text="" visible="false" />
+    <Label fx:id="negativeResponseObject" layoutX="105.0" layoutY="90" text="the field object is missing" style="-fx-text-fill: red; -fx-font-size: 8px;" visible="false"/>
+    <Label layoutX="50.0" layoutY="110.0" text="Object" />
+    <TextField fx:id="object" layoutX="100.0" layoutY="105.0" prefHeight="26.0" prefWidth="366.0" visible="true" />
+    <Label fx:id="objectReply" layoutX="100.0" layoutY="110.0" text="" visible="false" />
+    <Label fx:id="negativeResponseContent" layoutX="460.0" layoutY="153" text="the field content is missing" style="-fx-text-fill: red; -fx-font-size: 8px;" visible="false"/>
+    <Label layoutX="50.0" layoutY="150.0" text="Content" />
+    <TextArea fx:id="content" layoutX="50.0" layoutY="170.0" prefHeight="180.0" prefWidth="540.0" />
+
+    <Button fx:id="send" layoutX="530.0" layoutY="360.0" mnemonicParsing="false" onAction="#handleSendMail" text="Send"/>
+
+</AnchorPane>

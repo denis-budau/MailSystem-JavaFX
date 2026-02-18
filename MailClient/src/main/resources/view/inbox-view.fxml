@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+
+<AnchorPane prefWidth="640" prefHeight="400"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.unito.client.Controller.InboxController">
+
+    <Label layoutX="200.0" layoutY="20.0" text="Hi!" style="-fx-font-size: 22px;" />
+    <Label fx:id="name" layoutX="235.0" layoutY="20.0" text="" style="-fx-font-size: 22px;" />
+
+    <Label fx:id="notify" layoutX="60.0" layoutY="60.0" text="" style="-fx-text-fill: red; -fx-font-size: 14px;" visible="false" />
+    <Label fx:id="error" layoutX="60.0" layoutY="60.0" text="" style="-fx-text-fill: red; -fx-font-size: 14px;" visible="false" />
+    <Label fx:id="connect" layoutX="480.0" layoutY="45.0" text="🟢  Connesso" style="-fx-text-fill: green; -fx-font-size: 12px;" />
+    <Label fx:id="noConnect" layoutX="480.0" layoutY="45.0" text="🔴  Non connesso" style="-fx-text-fill: red; -fx-font-size: 12px;" visible="false"/>
+    <!-- Lista Email -->
+    <ListView fx:id="emailList" layoutX="50.0" layoutY="80.0" prefHeight="250.0" prefWidth="540.0" />
+
+    <!-- Bottoni, distribuiti uniformemente con il "new mail" allineato a destra -->
+
+    <Button fx:id="reply" layoutX="190.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleReply" text="reply" />
+    <Button fx:id="replyAll" layoutX="260.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleReplyAll" text="reply all" />
+    <Button fx:id="forward" layoutX="340.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleForward" text="forward" />
+    <Button fx:id="delete" layoutX="420.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleDelete" text="delete" />
+    <Button fx:id="newMail" layoutX="490.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleNewMail" text="new mail" />
+    <Button fx:id="logout" layoutX="60.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleLogout" text="logout" />
+
+</AnchorPane>

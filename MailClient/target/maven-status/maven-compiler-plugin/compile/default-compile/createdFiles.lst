@@ -1,0 +1,12 @@
+com\unito\client\Controller\InboxController.class
+com\unito\client\Controller\InboxController$1.class
+com\unito\client\ViewSwitcher.class
+com\unito\client\DataModel\Model.class
+com\unito\client\ThreadPoolManager.class
+com\unito\client\ClientApplication.class
+com\unito\client\ClientRequest.class
+com\unito\client\Controller\LoginController.class
+com\unito\client\Controller\MailDetailsController.class
+com\unito\client\Controller\NewMailController.class
+com\unito\client\Controller\InboxController$2.class
+com\unito\client\ViewSwitcher$Pair.class

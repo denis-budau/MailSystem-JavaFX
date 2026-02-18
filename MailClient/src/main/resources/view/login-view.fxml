@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+
+<AnchorPane prefWidth="640" prefHeight="400"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.unito.client.Controller.LoginController">
+
+    <Label layoutX="220.0" layoutY="140.0" text="Insert mail-address" style="-fx-font-size: 22px;"/>
+    <TextField fx:id="address" layoutX="220.0" layoutY="180.0" prefHeight="26.0" prefWidth="120.0" />
+    <Button fx:id="login" layoutX="360.0" layoutY="180.0" mnemonicParsing="false" onAction="#handleLogin" text="Login"/>
+    <Label fx:id="negativeResponse" layoutX="360.0" layoutY="210.0" text="" style="-fx-text-fill: red; -fx-font-size: 8px;"/>
+
+</AnchorPane>

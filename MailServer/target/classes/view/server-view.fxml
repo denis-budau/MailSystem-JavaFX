@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox
+        xmlns="http://javafx.com/javafx/17"
+        xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="com.unito.server.Controller.ServerController">
+    <TableView fx:id="table">
+        <columns>
+            <TableColumn fx:id="user"    text="user"/>
+            <TableColumn fx:id="message" text="message"/>
+        </columns>
+    </TableView>
+</VBox>
