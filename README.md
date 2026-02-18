@@ -37,3 +37,6 @@ The client and server communicate only via **textual data over Java sockets**, f
 - Supports multiple users
 - Designed for scalability
 - Error handling for server disconnection and invalid addresses
+
+This project was developed as part of a university course assignment at the University of Turin (Informatics Bachelor's, 2024-25).  
+It was completed and then uploaded to GitHub for portfolio purposes.
